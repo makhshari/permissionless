@@ -1,0 +1,76 @@
+{
+  "name": "swipefi",
+  "version": "1.0.0",
+  "description": "The world's first Web3 credit card with on-chain rewards, forced savings, and DeFi integration",
+  "private": true,
+  "author": "SwipeFi Team",
+  "license": "MIT",
+  "homepage": "https://swipefi.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/swipefi.git"
+  },
+  "keywords": [
+    "web3",
+    "defi",
+    "credit-card",
+    "blockchain",
+    "ethereum",
+    "base",
+    "nextjs",
+    "solidity",
+    "typescript"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deployV3.ts --network base-sepolia",
+    "test": "npx hardhat test",
+    "clean": "rm -rf .next out artifacts cache typechain-types"
+  },
+  "dependencies": {
+    "@coinbase/cdp-sdk": "^1.18.0",
+    "@coinbase/onchainkit": "latest",
+    "@openzeppelin/contracts": "^4.9.5",
+    "@tanstack/react-query": "^5",
+    "ethers": "^6.14.4",
+    "next": "15.3.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "viem": "^2.27.2",
+    "wagmi": "^2.14.11"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "dotenv": "^16.4.5",
+    "eslint": "^8",
+    "eslint-config-next": "15.3.3",
+    "hardhat": "^2.25.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
